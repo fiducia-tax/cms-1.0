@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_form_websites",
+  "info": {
+    "singularName": "contact-form-website",
+    "pluralName": "contact-form-websites",
+    "displayName": "Contact Form (website)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Mobile": {
+      "type": "string",
+      "regex": "(?:\\+1[-.\\s]?(\\(?\\d{3}\\)?[-.\\s]?)?\\d{3}[-.\\s]?\\d{4}|(?:\\+91[-.\\s]?\\d{10}|\\(?\\d{3}\\)?[-.\\s]?\\d{3}[-.\\s]?\\d{4}))",
+      "required": true
+    },
+    "Message": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
